@@ -1,5 +1,5 @@
 from graph import Graph
-from edmonds_karp import FordFulkerson
+from ford_fulkerson import FordFulkerson
 
 graph = Graph()
 graph.add_nodes(['S', 'A', 'C', 'B', 'D', 'T'])
