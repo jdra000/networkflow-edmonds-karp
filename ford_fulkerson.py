@@ -17,11 +17,12 @@ class FordFulkerson():
         while bfs.initiate():
             
             path = bfs.reconstruct_path()
-            print(path)
 
             # 4. create residual graph and update it
             path_flow = self.graph.create_residual_graph(path)
             self.graph.update_residual_graph(path, path_flow)
+
+            print(path + list(str(path_flow)))
 
             # 5. Update current flow
             max_flow += path_flow
