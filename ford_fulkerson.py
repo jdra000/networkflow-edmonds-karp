@@ -5,7 +5,8 @@ class FordFulkerson():
         self.graph = graph
         self.starting_node = starting_node
         self.ending_node = ending_node
-        
+        self.paths = []
+
     def initiate(self):
         # 1. Initialize flow to 0
         max_flow = 0
@@ -21,8 +22,9 @@ class FordFulkerson():
             # 4. create residual graph and update it
             path_flow = self.graph.create_residual_graph(path)
             self.graph.update_residual_graph(path, path_flow)
-
-            print(path + list(str(path_flow)))
+            
+            path.append(str(path_flow))
+            self.paths.append(path)
 
             # 5. Update current flow
             max_flow += path_flow

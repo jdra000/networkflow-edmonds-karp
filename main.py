@@ -16,3 +16,4 @@ ending_node = 'T'
 method = FordFulkerson(graph, starting_node, ending_node)
 
 print(f"The maximum possible flow is {method.initiate()}")
+print(f"The paths where the flow goes: {method.paths}")
