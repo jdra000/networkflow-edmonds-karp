@@ -4,7 +4,7 @@ If you want to implement the algorithm you just need to follow the code inside `
 
 The simulation was created using AADT (Annual Average Daily Traffic) data from the Florida Department of Transportation, which was then adjusted to reflect 10% of it's value (a realistic estimate of peak-hour volume per road).
 
-Resources: [AADT](https://tdaappsprod.dot.state.fl.us/fto/), [Evacuation Order](https://www.colliercountyfl.gov/Home/Components/News/News/48963/7686)
+Resources: [AADT](https://tdaappsprod.dot.state.fl.us/fto/), [Evacuation Order](https://www.colliercountyfl.gov/Home/Components/News/News/48963/7686).
 
 <img width="454" alt="example" src="./general-view.jpg">
 
